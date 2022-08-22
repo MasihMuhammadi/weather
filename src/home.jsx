@@ -95,7 +95,7 @@ const Home = () =>{
   return (
     <>
     <div className="container">
-    <form>
+    
    <input type="text" className='me-0 ms-4 mt-5' autoFocus={true} placeholder="Enter a city Name..." onChange={onChange}/>
    <button type="submit" className="btn btn-light text-success btn-sm ms-1"  onClick={onSubmit} >ok</button>
    <div className="">
@@ -105,7 +105,7 @@ const Home = () =>{
   <option >kelvin</option>
 </select>
 </div>
-</form>
+
       <div className="d-flex flex-lg-row flex-column description mt-5">
         <div className="p-2 mx-4">Country: <b>{country}</b></div>
         <div className="p-2 mx-4">City: <b>{city}</b></div>
