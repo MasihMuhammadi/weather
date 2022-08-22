@@ -1,0 +1,43 @@
+*{
+  background:#198754;
+  background-repeat: no-repeat;
+  color:#fff;
+  
+}
+.description{
+  font-size:30px;
+  
+
+}
+
+.status{
+  font-size:50px;
+}
+.hight,.low{
+  font-size:30px;
+  margin-left:15px;
+}
+.text-primary{
+  font-size:20px;
+}
+b{
+  font-size:50px;
+}
+input{
+
+  border-radius: 10px;
+  border:2px solid #fff;
+  background:#198754;
+  width:200px;
+}
+
+.drop{
+  font-size:20px;
+  border-radius:5px;
+  width:110px;
+  
+}
+::-webkit-input-placeholder{
+  color:#fff;
+}
+
