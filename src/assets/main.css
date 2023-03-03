@@ -1,0 +1,55 @@
+
+  body{
+    overflow: hidden;
+  }
+  .background_dark{
+  width:100vw;
+  height:100vh;
+    color:white;
+    background:rgba(0,0,0,0.9);
+    padding:50px;
+
+   
+ }
+ .background_light{
+  width:100vw;
+  height:100vh;
+  color:black;
+  background:rgb(212, 209, 209);
+  padding:50px;
+
+
+}
+  button{
+    height:42px;
+    border-radius:5px;
+ 
+  }
+  input{
+    background-color: rgba(0,0,0,0.1);
+    border:2px solid white;
+    color:white;
+    height:42px;
+    padding-left:3px;
+    border-radius:5px;
+    margin-top:10px;
+  }
+  .input_dark{
+    border:2px solid black;
+    color:black;
+
+  }
+
+  .toggler{
+    width:40px;
+    height:20px;
+    border-radius:10px;
+    border:2px solid gray;
+  }
+  .toggler_dark{
+    background:white;
+  }
+  .toggler>input{
+    display:none;
+  }
+ 
