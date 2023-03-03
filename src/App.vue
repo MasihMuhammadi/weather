@@ -54,7 +54,7 @@ import Modal from './modal.vue'
 <template class="">
   <Modal :visible="visible" />
   <div :class="{ background_dark: dark_light == false, background_light: dark_light }">
-      {{ dark_light }}
+   
     <div class="toggler" :class='{toggler_dark : dark_light}' @click="toggle_page">
       <input type="checkbox" v-model="dark_light" />
       <div class="toggle-btn" :class="{ go_to: dark_light, come_to: dark_light == false }"></div>
