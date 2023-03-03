@@ -22,8 +22,15 @@ import Modal from './modal.vue'
       selected:'Celcius',
       visible:false,
       icon:'',
+      date:new Date().getDay(),
+      monthDate: new Date().getDate(),
+      month:new Date().toLocaleDateString('default',{month:'long'}),
+      weekend:['Saturday','Sunday','monday','Tuesday','Wednesday','Thursday','friday'],
     
     }
+  },
+  mounted(){
+    console.log(`  ${this.weekend[this.date]} ${this.month} ${this.monthDate}`)
   },
  
   methods: {
@@ -90,6 +97,8 @@ import Modal from './modal.vue'
     <h1 v-else="selected == 'Farenhait'" style="font-size: 80px">
        {{ Math.round((temp - 273.15) * 9/5 + 32) }} <span>&#8457;</span>
     </h1>
+      <h5>{{ weekend[date]}}, {{month}}, {{monthDate}} </h5>
+    
       </div>
  
       <h3 class="px-5">{{ desc }}  <img :src="`http://openweathermap.org/img/wn/${icon}@2x.png`" width="70" /></h3> 
