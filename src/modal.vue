@@ -28,9 +28,9 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Modal title</h5>
-        <button type="button" @click="openCloseFun()" class="close" data-dismiss="modal" aria-label="Close">
+        <div  @click="openCloseFun()" class="px-2 rounded bg-dark text-white dismiss"  data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-        </button>
+        </div>
       </div>
       <div class="modal-body">
         <p>The city not Found</p>
@@ -43,3 +43,8 @@
   </div>
 </div>
 </template>
+<style>
+.dismiss{
+cursor:pointer;
+}
+</style>
